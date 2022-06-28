@@ -1,0 +1,83 @@
+.grid-banner {
+    margin: 8rem 0 4rem 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(24, auto);
+    grid-template-rows: repeat(8, 60px);
+    gap: 18px;
+    
+    .caja1 {
+        background: url("../assets/img/fotos/edificioAmarillo.jpg");
+        grid-column: 1/5;
+        grid-row: 1/5;
+    }
+    .caja2 {
+        background: url("../assets/img/fotos/carouselProyectos/camaGris.jpg");
+        grid-column: 5/11;
+        grid-row: 2/5;
+    }
+    .caja3 {
+        background: url("../assets/img/background/bgComplejo.jpg");
+        grid-column: 11/16;
+        grid-row: 3/6;
+    }
+    .caja4 {
+        background: url("../assets/img/background/bgServicios.jpg");
+        grid-column: 19/25;
+        grid-row: 1/4;
+    }
+    .caja5 {
+        background: url("../assets/img/fotos/casaModular.jpg");
+        grid-column: 1/6;
+        grid-row: 5/9;
+    }
+    .caja6 {
+        background: url("../assets/img/fotos/cocinaVidrioEstantes.jpg");
+        grid-column: 6/11;
+        grid-row: 5/8;
+    }
+    .caja7 {
+        background: url("../assets/img/fotos/carouselProyectos/interiorBano.jpg");
+        grid-column: 11/14;
+        grid-row: 6/8;
+    }
+    .caja8 {
+        background: url("../assets/img/fotos/carouselProyectos/cocinaMadera.png");
+        grid-column: 14/16;
+        grid-row: 6/7;
+    }
+    .caja9 {
+        background: url("../assets/img/background/bgIndex.jpg");
+        grid-column: 16/22;
+        grid-row: 4/8;
+    }
+    .caja10 {
+        background: url("../assets/img/fotos/esquina.jpg");
+        grid-column: 22/24;
+        grid-row: 4/6;
+    }
+    .caja11 {
+        background: url("../assets/img/background/bgIndex.jpg");
+        grid-column: 24/25;
+        grid-row: 4/6;
+    }
+    .caja12 {
+        background: url("../assets/img/fotos/carouselProyectos/interiorConSillon.jpg");
+        grid-column: 22/25;
+        grid-row: 6/9;
+    }
+    .caja13 {
+        background: url("../assets/img/fotos/interior.jpg");
+        grid-column: 16/19;
+        grid-row: 2/4;
+    } 
+    .caja {
+        width: auto;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+

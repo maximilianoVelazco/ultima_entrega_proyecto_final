@@ -1,0 +1,40 @@
+form{
+    label {
+        font-size: 1.2rem;
+        display: block;
+        margin-bottom: 1rem;
+    }
+    input,
+    textarea {
+        width: 100%;
+        font-size: 1.3rem;
+        background-color: nth($colorBg, 1 );
+        border: none;
+        border-radius: $bordeRadius;
+        padding: 10px;
+        margin-bottom: 2.5rem;
+        &:focus-visible{
+            box-shadow: 0px 4px 7px 0px rgba(161, 161, 161, 0.8);
+            font-size: 1.8rem;
+        }
+    }
+    button{
+        @include btnLink;
+        &:hover{
+            @include btnHover;
+        }
+    }
+}
+
+/* UBICACION */
+iframe {
+    width: 80%;
+    height: 350px;
+    border: none;
+}
+
+
+
+
+
+

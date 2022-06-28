@@ -1,0 +1,42 @@
+.oculto{
+    overflow: hidden;
+}
+
+.contenedor {
+    @include anchoMax();
+}
+
+.centrar {
+    @include centrar();
+}
+
+// filtro para imagenes 
+.img-filter {
+    filter: brightness(0.4);
+    transition: $transicion;
+}
+
+.card:hover .img-filter {
+    filter: brightness(0.1);
+}
+
+// backgroud colores
+.bg1 {
+    background-color: nth($colorBg, 1 );
+}
+
+.bg2 {
+    background-color: nth($colorBg, 2 );
+}
+
+.bg3 {
+    background-color: nth($colorBg, 3 );
+}
+
+.bg4 {
+    background-color: nth($colorBg, 4 );
+}
+
+.animate__delay-05s {
+    animation-delay: 0.5s;
+}

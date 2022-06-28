@@ -1,0 +1,37 @@
+// CENTRAR TODO
+
+@mixin centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin anchoMax {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+//MIXIN BOTONES
+@mixin btnLink {
+    width: fit-content;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border: 2px solid $colorPrincipal;
+    border-radius: 0;
+    transition: $transicion;
+    color: $colorPrincipal;
+    position: relative;
+    background-color: none;
+}
+
+@mixin btnHover {
+    border: $borde;
+    background-color: $colorPrincipal;
+    color: $colorBlanco;
+}
+
+@mixin btnVisited {
+    background-color: nth($colorBg, 1 );
+    color: $colorPrincipal;
+}

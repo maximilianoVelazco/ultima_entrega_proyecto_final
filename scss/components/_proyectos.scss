@@ -1,0 +1,99 @@
+.gridLayoutProyectos{
+    @include anchoMax();
+    display: grid;
+    grid-template-areas:
+        /* 3 columnas */
+        "tittle tittle tittle"
+        "box1 box1 box2"
+        "box3 box4 box5"
+        "box6 box7 box7"
+        "box8 box8 box9"
+        "box8 box8 box10"
+        "box8 box8 box10";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 400px 400px 400px 200px 200px 100px;
+    padding: 0 18px;
+    .box2{
+    padding: 3rem;
+    text-align: center;
+    }
+    .box4,
+    .box6,
+    .box10{
+        @extend .box2
+    }
+    .box1 {
+        grid-area: box1;
+    }
+    .box2 {
+        grid-area: box2;
+    }
+    .box3 {
+        grid-area: box3;
+    }
+    .box4 {
+        grid-area: box4;
+    }
+    .box5 {
+        grid-area: box5;
+    }
+    .box6 {
+        grid-area: box6;
+    }
+    .box7 {
+        grid-area: box7;
+    }
+    .box8 {
+        grid-area: box8;
+    }
+    .box9 {
+        grid-area: box9;
+    }   
+    .box10 {
+        grid-area: box10;
+    }  
+    .tittle{
+        grid-area: tittle;
+    }
+    .boxGaleria{
+        @include centrar();
+        overflow: hidden;
+    }
+    .boxGaleriaImg {
+        min-height: 100%;
+        transition: $transicion;
+        background-color: $colorPrincipal;
+        img{
+            transition: $transicion;
+        }
+        &:hover img{
+            opacity: 0.3;
+        }
+    }
+    .imgHorizontal img {
+        max-width: 110%;
+        transition: $transicion;
+    }
+    .imgVertical img {
+        height: 100%;
+    }
+    div{
+        .modal-mod{
+            width: 800px;
+            max-width: 100%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            background-color: $colorPrincipal;
+            .carousel-wh {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+

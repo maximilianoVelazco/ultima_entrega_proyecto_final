@@ -1,0 +1,69 @@
+/* estilos modificados para los botones principales */
+.btn-mod:link {
+    @include btnLink;
+}
+
+.btn-mod:hover {
+    @include btnHover;
+}
+
+.btn-mod:visited {
+    @include btnVisited;
+}
+
+
+/* Boton subir */
+#arriba {
+    position: absolute;
+    top: 0;
+}
+
+.irArriba{ 
+    a {
+        width: 100%;
+        height: 100%;
+    }
+    img{
+        width: 45px;
+        padding: 10px;
+        border-radius: $bordeRadius;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        transition: $transicion;
+    }
+}
+
+
+.irArriba img:hover,
+.menuSocial img:hover {
+    background-color: nth($colorBg, 1 );
+    animation: subirAnimacion $transicionLenta;
+}
+
+@keyframes subirAnimacion {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    20% {
+        transform: scale(1.2, 0.5);
+    }
+
+    40% {
+        transform: scale(0.8, 1.2);
+    }
+
+    60% {
+        transform: scale(1.3, 0.6);
+    }
+
+    80% {
+        transform: scale(0.9, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+/* fin boton subir */

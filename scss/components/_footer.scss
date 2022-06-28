@@ -1,0 +1,25 @@
+/* FOOTER */
+footer {
+    padding: 1.5rem 0;
+    margin-top: 10rem;
+    .contenedor{
+        @include centrar;
+        flex-direction: column;
+        .logo{
+            font-size: 4rem;
+        }
+        .menuSocial {
+            text-align: center;
+            margin: 2rem 0;
+            img{
+                width: 60px;
+                padding: 10px;
+                border-radius: $bordeRadius;
+            }
+        }
+    }
+}
+
+
+
+

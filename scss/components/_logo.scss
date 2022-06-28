@@ -1,0 +1,28 @@
+.logo {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+/* ANIMACION LOGO */
+.logoAnimado {
+    animation: animacionLogo $transicionLenta;
+    animation-delay: 0.3s;
+}
+
+@keyframes animacionLogo {
+    0% {
+        letter-spacing: -1rem;
+        transform: translateZ(-100px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: normal;
+    }
+}

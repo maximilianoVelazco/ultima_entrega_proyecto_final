@@ -1,0 +1,37 @@
+/* HEADER */
+header{
+    .container{
+        button{
+            .icon-mod{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        div{
+            ul{
+                li{
+                    .enlace {
+                        color: $colorPrincipal;
+                        border-bottom: 2px solid transparent;
+                        transition: $transicion;
+                        &:hover{
+                            border-color: $colorPrincipal;
+                            color: $colorPrincipal;
+                        }
+                        &:activo{
+                            color: nth($colorBg , 1 )
+                        }
+                    }
+                    .activo {
+                        border-color: $colorPrincipal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+    

@@ -1,0 +1,19 @@
+
+// COLORES
+$colorPrincipal: #141414;
+$colorBlanco: #FAEBD7;
+$colorBg:
+    #E5E5E5,
+    #EEE8BE,
+    #BEC1ED,
+    #B2DFDB;
+$colorTransparente: rgba(0, 0, 0, 0.3);
+$sinColor: transparent;
+
+// TRANCICIONES
+$transicion: ease-in-out .4s;
+$transicionLenta: ease-in 0.8s;
+
+// BORDES
+$borde: 2px, solid, $colorPrincipal;
+$bordeRadius: 5px;

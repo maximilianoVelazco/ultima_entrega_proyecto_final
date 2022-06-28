@@ -1,0 +1,18 @@
+//tarjetas para inicio y servicios
+.tarjetaBox {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.tarjetaBox:last-child {
+    margin-bottom: 0;
+}
+
+.iconBox {
+    width: 115px;
+    height: 115px;
+    padding: 5px;
+    margin-right: 2rem;
+    border-radius: $bordeRadius;
+}
